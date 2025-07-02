@@ -24,13 +24,12 @@
 
 1.  **リポジトリのクローンまたはダウンロード:**
     ```bash
-    git clone https://github.com/your-username/your-repo-name.git
-    cd your-repo-name
+    git clone https://github.com/tetsunosuke/pptx2movie.git
     ```
     または、ZIPファイルをダウンロードして展開します。
 
 2.  **FFmpegの配置:**
-    `ffmpeg.exe` をプロジェクトルートの `FFmpeg/` ディレクトリに配置するか、`.env` ファイルでパスを指定します。
+    `ffmpeg.exe` をプロジェクトルートの `FFmpeg/` ディレクトリに配置し、`.env` ファイルでパスを指定します。
 
 3.  **VOICEVOXの配置 (VOICEVOXを使用する場合):**
     VOICEVOXアプリケーションのファイルをプロジェクトルートの `VOICEVOX/` ディレクトリに配置するか、`.env` ファイルでパスを指定します。
@@ -40,7 +39,7 @@
 
 ## ⚙️ 設定 (`.env`)
 
-`.env` ファイルは、スクリプトの動作を制御するための環境変数を定義します。
+`.env` ファイルは、スクリプトの動作を制御するための環境変数を定義します。 `.env.example` を参考にしてください
 
 ```ini
 # --- Azure Text-to-Speech の設定 ---
@@ -117,9 +116,3 @@ PowerShellを開き、スクリプトのディレクトリに移動します。
 *   **指定された話者名またはスタイルが見つかりません。:**
     *   `.env` ファイルの `VOICEVOX_SPEAKER_NAME` と `VOICEVOX_SPEAKER_STYLE` がVOICEVOXアプリケーションで利用可能な話者名とスタイルに一致しているか確認してください。
 
-*   **PowerPoint COMオブジェクト関連のエラー:**
-    *   Microsoft PowerPointがマシンにインストールされており、正常に動作することを確認してください。
-
-## 📄 ライセンス
-
-このプロジェクトはMITライセンスの下で公開されています。詳細については、`LICENSE` ファイルを参照してください。
