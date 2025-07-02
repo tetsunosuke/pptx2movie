@@ -1,0 +1,2 @@
+# pptx2movie
+Powerpointで作成したスライドを動画にします
