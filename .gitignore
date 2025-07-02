@@ -1,0 +1,7 @@
+.env
+assets/
+logs/
+FFmpeg/
+VOICEVOX/
+一時作業用/
+*.mp4
